@@ -30,7 +30,6 @@ const UserForm = (props) => {
         <div>
           <label htmlFor={'username'}>Username</label>
           <input
-            required={true}
             value={usrName}
             onChange={usrNameEditHandler}
             name={'username'}
@@ -40,7 +39,6 @@ const UserForm = (props) => {
         <div>
           <label htmlFor={'age'}>Age (Years)</label>
           <input
-            required={true}
             value={age}
             onChange={ageEditHandler}
             name={'age'}
