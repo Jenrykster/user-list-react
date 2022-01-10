@@ -4,3 +4,7 @@
   margin: 10px 0px;
   border-radius: 0px;
 }
+
+.user:hover {
+  cursor: pointer;
+}

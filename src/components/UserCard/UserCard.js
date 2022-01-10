@@ -2,11 +2,12 @@ import styles from './UserCard.module.css';
 import Card from '../UI/Card';
 
 const UserCard = (props) => {
+  const userClickHandler = (event) => {
+    props.onUserClick(props.id);
+  };
   return (
-    <Card className={styles.user}>
-      {`${props.name} (${props.years} ${
-        props.years > 1 ? 'years' : 'year'
-      } old)`}
+    <Card onClick={userClickHandler} className={styles.user}>
+      {`${props.name} (${props.age} ${props.age > 1 ? 'years' : 'year'} old)`}
     </Card>
   );
 };
